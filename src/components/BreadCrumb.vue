@@ -13,7 +13,9 @@
             <a href="/about" class="hover:underline">About</a>
           </li>
           <li><span class="mx-2">/</span></li>
-          <li class="text-gray-800 dark:text-white font-semibold">Current Page</li>
+          <li class="text-gray-800 dark:text-white font-semibold">
+            Current Page
+          </li>
         </ol>
       </nav>
     </div>
@@ -22,6 +24,6 @@
 
 <script>
 export default {
-  name: 'BreadCrumb',
-}
+  name: "BreadCrumb",
+};
 </script>
