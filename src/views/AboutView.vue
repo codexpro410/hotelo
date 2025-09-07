@@ -10,7 +10,7 @@
 
 
 <script setup>
-import Breadcrumb from '@/components/x.vue';
+import BreadCrumb from '@/components/BreadCrumb.vue'
 
 
 
