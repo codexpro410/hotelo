@@ -12,6 +12,7 @@
 </template>
 
 
+
 <script setup>
 import HeroSlider from '@/components/HeroSlider.vue'
 import SearchSection from '@/components/SearchSection.vue'
