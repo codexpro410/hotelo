@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans;
+}
+
+html, body, #app { height: 100%; }
+
+
+
+/* Reusable button */
+.btn-accent { @apply inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold text-white shadow-soft transition; background-image: linear-gradient(90deg, #ad58eb 0%, #7a5be6 100%); }
+.btn-accent:hover { filter: brightness(1.05); }
+
+
+.btn-outline { @apply inline-flex items-center justify-center px-5 py-3 rounded-xl font-semibold border; border-color: rgba(255,255,255,0.2); }
+
+
+.card { @apply bg-white dark:bg-zinc-900 rounded-2xl shadow-soft overflow-hidden; }
+
+
+.section { @apply py-16 md:py-20; }
+.section-title { @apply text-3xl md:text-4xl font-extrabold; }
+.section-subtitle { @apply text-zinc-600 dark:text-zinc-400 max-w-3xl mx-auto; }
