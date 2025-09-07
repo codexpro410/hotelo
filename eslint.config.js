@@ -1,26 +1,24 @@
-import vue from "eslint-plugin-vue";
-import vueParser from "vue-eslint-parser";
-import babelParser from "@babel/eslint-parser";
+// eslint.config.js
+import vue from 'eslint-plugin-vue'
+import prettier from 'eslint-plugin-prettier'
 
 export default [
   {
-    files: ["**/*.vue", "**/*.js"],
+    files: ['**/*.js', '**/*.vue'],
     languageOptions: {
-      parser: vueParser,
-      parserOptions: {
-        parser: babelParser,
-        ecmaVersion: "latest",
-        sourceType: "module",
-        requireConfigFile: false,
-      },
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     plugins: {
       vue,
+      prettier,
     },
+    extends: [
+      'plugin:vue/vue3-recommended',
+    ],
     rules: {
-      "vue/html-indent": ["error", 2],
-      "vue/max-attributes-per-line": ["error", { singleline: 3 }],
-      "vue/multi-word-component-names": "off",
+      'prettier/prettier': 'error',
+      'vue/multi-word-component-names': 'off',
     },
   },
-];
+]
