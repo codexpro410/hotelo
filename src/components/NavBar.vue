@@ -4,7 +4,10 @@
       <div class="h-16 flex items-center gap-4 relative">
         <!-- Logo -->
         <router-link to="/" class="flex items-center gap-2 font-extrabold text-lg">
-          <img src="/images/logo.png" alt="Logo" width="200" height="80" />
+          <img src="/images/logo.png"
+               alt="Logo"
+               width="200"
+               height="80" />
         </router-link>
 
         <!-- Nav links -->
@@ -53,12 +56,12 @@
 
   
     <button
-  @click="toggleTheme"
-  class="fixed right-4 top-[200px] flex items-center gap-2 px-3 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg hover:bg-primary/50 transition-colors z-50"
->
-  <component :is="isDark ? SunIcon : MoonIcon" class="w-5 h-5 text-yellow-400" />
+      @click="toggleTheme"
+      class="fixed right-4 top-[200px] flex items-center gap-2 px-3 py-3 rounded-full border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 shadow-lg hover:bg-primary/50 transition-colors z-50"
+    >
+      <component :is="isDark ? SunIcon : MoonIcon" class="w-5 h-5 text-yellow-400" />
 
-</button>
+    </button>
   </header>
 </template>
 

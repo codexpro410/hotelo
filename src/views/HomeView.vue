@@ -1,14 +1,14 @@
 <template>
-<main>
-<HeroSlider />
-<SearchSection />
-<RoomsGrid />
-<RoomsCarousel />
-<FAQSection />
-<TestimonialsSection />
-<TeamSection />
-<BlogSection />
-</main>
+  <main>
+    <HeroSlider />
+    <SearchSection />
+    <RoomsGrid />
+    <RoomsCarousel />
+    <FAQSection />
+    <TestimonialsSection />
+    <TeamSection />
+    <BlogSection />
+  </main>
 </template>
 
 

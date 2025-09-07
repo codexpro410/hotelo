@@ -1,6 +1,6 @@
 <template>
   <section class="py-16 bg-white dark:bg-zinc-900">
-        <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl font-bold text-center text-white mb-4">Our Clients Feedback</h2>
       <p class="text-center text-gray-600 dark:text-gray-300 mb-10">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

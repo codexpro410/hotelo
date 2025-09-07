@@ -22,7 +22,7 @@
               <h3 class="w-full text-xl font-semibold text-white flex items-center justify-between gap-2">
                 <span>{{ room.name }}</span>
                 <span class="flex text-yellow-400 ">
-                <StarIcon v-for="star in room.stars" :key="star" class="w-4 h-4" />
+                  <StarIcon v-for="star in room.stars" :key="star" class="w-4 h-4" />
                 </span>
               </h3>
               <p class="mt-2 text-gray-600 dark:text-gray-300 truncate">{{ room.description }}</p>

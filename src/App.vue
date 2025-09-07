@@ -1,13 +1,13 @@
 <template>
-<div>
-<LoadingScreen v-if="loading" />
-<div v-else>
-<TopHeader />
-<NavBar />
-<router-view />
-<AppFooter />
-</div>
-</div>
+  <div>
+    <LoadingScreen v-if="loading" />
+    <div v-else>
+      <TopHeader />
+      <NavBar />
+      <router-view />
+      <AppFooter />
+    </div>
+  </div>
 </template>
 
 <script setup>

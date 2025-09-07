@@ -32,7 +32,7 @@
               <h3 class="w-full text-xl font-semibold text-white flex items-center justify-between gap-2">
                 <span>{{ room.name }}</span>
                 <span class="flex text-yellow-400 ">
-                <StarIcon v-for="star in room.stars" :key="star" class="w-4 h-4" />
+                  <StarIcon v-for="star in room.stars" :key="star" class="w-4 h-4" />
                 </span>
               </h3>
             </div>
@@ -40,7 +40,7 @@
             <!-- Features -->
             <div class="flex items-center text-gray-400 text-sm mt-2 space-x-4">
               <span class="flex items-center gap-1">
-                  <Bed class="w-4 h-4 text-[#ad58eb]" />{{ room.beds }} Bed
+                <Bed class="w-4 h-4 text-[#ad58eb]" />{{ room.beds }} Bed
               </span>
               <span class="flex items-center gap-1">
                 <Bath  class="text-[#ad58eb]" />{{ room.baths }} Bath
