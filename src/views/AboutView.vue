@@ -10,5 +10,7 @@
 
 
 <script setup>
-import BreadCrumb from '@/components/BreadCrumb.vue'
+import BreadCrumb from '@/components/BreadCrumb.vue';
+
+
 </script>
