@@ -1,14 +1,13 @@
 <template>
-<div>
-    <BreadCrumb/>
-    <PageTitle/>
+  <div>
+    <BreadCrumb />
+    <PageTitle />
     <!-- Grid -->
-     <TestimonialsGridTemplate/>
-</div>
+    <TestimonialsGridTemplate />
+  </div>
 </template>
 <script setup>
-import BreadCrumb from '@/components/commonTemps/BreadCrumb.vue';
-import PageTitle from '@/components/commonTemps/PageTitle.vue';
-import TestimonialsGridTemplate from '@/components/TestimonialsGridTemplate.vue';
-
+import BreadCrumb from '@/components/commonTemps/BreadCrumb.vue'
+import PageTitle from '@/components/commonTemps/PageTitle.vue'
+import TestimonialsGridTemplate from '@/components/TemplateTestimonialsGrid.vue'
 </script>
