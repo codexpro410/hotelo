@@ -32,7 +32,8 @@ import FeaturesCheck from '@/components/about/FeaturesCheck.vue'
 import Counter from '@/components/about/Counter.vue'
 import RoomCardList from '@/components/ourRooms/RoomCardList.vue'
 import PageTitle from '@/components/commonTemps/PageTitle.vue'
-import TestimonialsGridTemplate from '@/components/testimonialsGridTemplate.vue'
+
 import TeamSliderTemplate from '@/components/TeamSliderTemplate.vue'
 import BlogSliderTemplate from '@/components/BlogSliderTemplate.vue'
+import TestimonialsGridTemplate from '@/components/TestimonialsGridTemplate.vue'
 </script>
