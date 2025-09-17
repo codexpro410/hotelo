@@ -1,27 +1,25 @@
 <template>
-  <section class="py-16 bg-white dark:bg-zinc-900">
     <div class="container mx-auto px-4 text-center">
-      
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <div
-          v-for="(member, index) in teamMembers"
-          :key="index"
-          class="bg-white dark:bg-zinc-800 rounded-lg shadow-md hover:shadow-xl transition duration-300"
-          :data-aos="'fade-up'"
-          :data-aos-duration="1200 + index * 200"
-        >
-          <div class="relative group overflow-hidden rounded-t-lg">
+      <swiper
+        :slides-per-view="3"
+        :space-between="20"
+        :loop="true"
+        navigation
+        pagination
+        class="rounded-2xl overflow-hidden"
+      >
+        <swiper-slide v-for="member in team4" :key="member.id">
+          <div class="bg-[#222222] relative group overflow-hidden rounded-t-lg">
             <a :href="member.link">
               <img
                 :src="member.image"
                 :alt="member.name"
-                class="w-full h-64 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-105"
+                class="w-full h-80 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-105"
               />
             </a>
 
             <div
-              class="absolute bottom-3 right-3 text-primary group-hover:text-black transition-colors duration-300 cursor-pointer z-10"
+              class="absolute bottom-3 right-3 p-1 bg-primary group-hover:bg-black transition-colors duration-300 cursor-pointer z-10"
             >
               <Share2 class="w-6 h-6"/>
             </div>
@@ -44,20 +42,21 @@
             </div>
           </div>
 
-          <div class="p-6 text-center relative">
+          <div class="p-6 text-center relative bg-[#222222]">
             <h3 class="text-lg font-semibold text-[#191919] dark:text-white">{{ member.name }}</h3>
             <span class="text-gray-500 dark:text-gray-300">{{ member.role }}</span>
           </div>
-        </div>
-      </div>
+        </swiper-slide>
+      </swiper>
     </div>
-  </section>
 </template>
 
 <script setup>
-
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { teamMembers } from '@/data/TeamData';
 import { Linkedin, Instagram, Facebook, Share2, TwitterIcon } from 'lucide-vue-next';
-
-
+const team4 = teamMembers.slice(0, 4);
 </script>

@@ -1,14 +1,14 @@
 <template>
   <section class="py-16 bg-white dark:bg-[#191919]">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-[#191919] dark:text-white mb-4">
-        Explore Our Rooms (Grid Style)
+      <!-- <h2 class="text-3xl font-bold text-[#191919] dark:text-white mb-4">
+        
       </h2>
       <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
       </p>
-      <p class="w-1/4 bg-primary h-1 text-center mx-auto mb-3"></p>
+      <p class="w-1/4 bg-primary h-1 text-center mx-auto mb-3"></p> -->
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div
@@ -76,138 +76,10 @@
 </template>
 
 <script setup>
-import { Bed, Bath, Wifi} from "lucide-vue-next";
-import { StarIcon } from '@heroicons/vue/24/solid'
-</script>
-<script >
+import { Bed, Bath, Wifi } from "lucide-vue-next";
+import { StarIcon } from "@heroicons/vue/24/solid";
 
-export default {
-  name: "RoomsGrid",
-  data() {
-    return {
-      rooms: [
-  {
-    name: "Single Room",
-    price: "$100 / Night",
-    beds: 1,
-    baths: 1,
-    stars: 5,
-    description:
-      "Cozy single room with a comfortable bed, private bathroom, and complimentary WiFi. Ideal for solo travelers.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-1.jpg",
-  },
-  {
-    name: "Double Room",
-    price: "$120 / Night",
-    beds: 2,
-    baths: 1,
-    stars: 5,
-    description:
-      "Spacious double room with two beds, modern bathroom, and a work desk. Perfect for couples or friends.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-2.jpg",
-  },
-  {
-    name: "Triple Room",
-    price: "$140 / Night",
-    beds: 3,
-    baths: 1,
-    stars: 5,
-    description:
-      "Comfortable triple room with three single beds, private bath, and ample space for a small group.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-3.jpg",
-  },
-  {
-    name: "Quad Room",
-    price: "$100 / Night",
-    beds: 4,
-    baths: 2,
-    stars: 5,
-    description:
-      "Family-friendly quad room with four beds, two bathrooms, and plenty of space for children.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-4.jpg",
-  },
-  {
-    name: "Queen Room",
-    price: "$120 / Night",
-    beds: 1,
-    baths: 1,
-    stars: 5,
-    description:
-      "Elegant queen room with a large queen-size bed, modern amenities, and beautiful city views.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-5.jpg",
-  },
-  {
-    name: "King Room",
-    price: "$140 / Night",
-    beds: 1,
-    baths: 1,
-    stars: 5,
-    description:
-      "Luxurious king room with a king-size bed, en-suite bathroom, and premium furnishings.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-6.jpg",
-  },
-  {
-    name: "Twin Room",
-    price: "$100 / Night",
-    beds: 2,
-    baths: 1,
-    stars: 5,
-    description:
-      "Twin room with two single beds, ideal for friends traveling together, with private bath and WiFi.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-7.jpg",
-  },
-  {
-    name: "Studio Room",
-    price: "$120 / Night",
-    beds: 1,
-    baths: 1,
-    stars: 5,
-    description:
-      "Spacious studio with a single bed, kitchenette, and cozy seating area, perfect for a short stay.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-8.jpg",
-  },
-  {
-    name: "Standard Room",
-    price: "$140 / Night",
-    beds: 2,
-    baths: 1,
-    stars: 5,
-    description:
-      "Standard room with modern furnishings, two beds, private bathroom, and complimentary amenities.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-9.jpg",
-  },
-  {
-    name: "Deluxe Room",
-    price: "$100 / Night",
-    beds: 2,
-    baths: 1,
-    stars: 5,
-    description:
-      "Deluxe room featuring premium bedding, elegant décor, and a large work desk for business travelers.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-10.jpg",
-  },
-  {
-    name: "Superior Suite",
-    price: "$120 / Night",
-    beds: 1,
-    baths: 1,
-    stars: 5,
-    description:
-      "Superior suite with king-size bed, living area, luxury bathroom, and exclusive amenities for comfort.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-11.jpg",
-  },
-  {
-    name: "Presidential Suite",
-    price: "$140 / Night",
-    beds: 2,
-    baths: 2,
-    stars: 5,
-    description:
-      "Opulent presidential suite with two bedrooms, spacious living room, private terrace, and top-notch facilities.",
-    image: "https://hotelo.mhrtheme.com/wp-content/plugins/vikbooking/site/resources/uploads/room-12.jpg",
-  },
-],
-    };
-  },
-};
+// ✅ Import rooms data
+import { rooms } from "@/data/roomsData";
+
 </script>

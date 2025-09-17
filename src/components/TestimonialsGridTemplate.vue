@@ -1,16 +1,10 @@
 <template>
-  <section class="py-16 bg-white dark:bg-zinc-900">
-    <div class="container mx-auto px-4 text-center">
-    
-      <Swiper
-        :modules="[Navigation, Pagination]"
-        :slides-per-view="3"
-        :space-between="40"
-        navigation
-        pagination
-        class="w-full "
-      >
-        <SwiperSlide v-for="testimonial in testimonials" :key="testimonial.id">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          v-for="(testimonial, index) in testimonials"
+          :key="index"
+          class="bg-[#191919] dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition"
+        >
           <div class="bg-gray-100 dark:bg-[#fff5dc] !text-black p-8 rounded-2xl shadow-lg">
             <ul class="flex items-center mb-4 gap-1 text-yellow-400">
               <StarIcon v-for="n in 5" :key="n" class="w-4 h-4"/>
@@ -27,20 +21,12 @@
               </div>
             </div>
           </div>
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  </section>
+      </div>
+      </div>
 </template>
 
 <script setup>
+import { testimonials } from '@/data/testimonials';
 import { StarIcon } from '@heroicons/vue/24/solid'
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Navigation, Pagination } from 'swiper/modules'
-
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { testimonials } from '@/data/testimonials'
 
 </script>

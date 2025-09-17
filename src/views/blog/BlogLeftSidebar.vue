@@ -1,10 +1,16 @@
 <template>
-  <section class="py-16 bg-white dark:bg-zinc-900">
-    <div class="container mx-auto px-4 text-center">
-      
+  <section class="py-16 bg-black text-white">
+    <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-8">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div
+      <!-- Sidebar -->
+      <BlogSideBar/>
+
+      <!-- Blog Content -->
+      <div class="lg:col-span-3">
+        <PageTitle h2="Our Latest Blog"/>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
           v-for="blog in blogs"
           :key="blog.id"
           class="bg-gray-50 dark:bg-black/50 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300"
@@ -35,13 +41,25 @@
             </a>
           </div>
         </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="flex justify-center mt-8 space-x-2">
+          <button class="px-3 py-1 border rounded hover:bg-primary hover:text-white">1</button>
+          <button class="px-3 py-1 border rounded hover:bg-primary hover:text-white">2</button>
+          <button class="px-3 py-1 border rounded hover:bg-primary hover:text-white">3</button>
+          <button class="px-3 py-1 border rounded hover:bg-primary hover:text-white">→</button>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { blogs } from '@/data/blogData';
+import { blogs } from "@/data/blogData.js";
+import PageTitle from "@/components/commonTemps/PageTitle.vue";
+import BlogSideBar from "@/components/blog/BlogSideBar.vue";
+
 
 
 </script>

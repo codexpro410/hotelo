@@ -1,16 +1,6 @@
 <template>
   <section class="py-16 bg-white dark:bg-[#191919]">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-[#191919] dark:text-white mb-4">
-        Frequently Asked Questions
-      </h2>
-      <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
-      </p>
-      <p class="w-1/4 bg-primary h-1 text-center mx-auto mb-3"></p>
-
-
       <div class="max-w-5xl mx-auto text-left grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div v-for="(column, colIndex) in faqColumns" :key="colIndex">
           <div

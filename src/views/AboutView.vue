@@ -1,18 +1,23 @@
 <template>
-  <div class="section">
-    <BreadCrumb title="About Us" />
-    <div class="max-w-5xl mx-auto px-4 mt-8">
-      <h2 class="section-title mb-4">About Hotelo</h2>
-      <p class="section-subtitle">We are dedicated to providing the best hospitality experience…</p>
-    </div>
-  </div>
+  <section class="bg-zinc-900 text-white py-16">
+    <BreadCrumb/>
+    <FeaturesCheck/>
+  </section>
+
+  
+  <!-- slider  -->
+    <PageTitle h2="Our Clients Feedback"/>
+    <TestimonialsSection />
+    <!-- team grid -->
+     <PageTitle h2="Our Team"/>
+    <TeamSection />
 </template>
 
-
 <script setup>
-import BreadCrumb from '@/components/BreadCrumb.vue'
-
-
-
+import FeaturesCheck from "@/components/about/FeaturesCheck.vue";
+import BreadCrumb from "@/components/commonTemps/BreadCrumb.vue";
+import PageTitle from "@/components/commonTemps/PageTitle.vue";
+import TeamSection from "@/components/TeamSection.vue";
+import TestimonialsSection from "@/components/TestimonialsSection.vue";
 
 </script>

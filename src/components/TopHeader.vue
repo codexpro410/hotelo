@@ -52,7 +52,8 @@
 
         <!-- login/register -->
         <a href="#" class="flex items-center gap-1 opacity-80 hover:opacity-100">
-          <User class="w-4 h-4 text-primary" /> <span class="hidden sm:inline hover:text-primary cursor-pointer transition-all duration-100">Login / Register</span>
+          <User class="w-4 h-4 text-primary" /> <span class="hidden sm:inline hover:text-primary cursor-pointer transition-all duration-100">
+            <router-link to="/pages/account">Login / Register</router-link></span>
         </a>
       </div>
     </div>
